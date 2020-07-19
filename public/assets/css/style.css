@@ -1,0 +1,26 @@
+body {
+  background-color: palegoldenrod;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style-type: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.burger-image {
+  background-image: url("../img/burger.svg");
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+
+.burger-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  margin: 20px;
+}
