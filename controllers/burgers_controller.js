@@ -20,9 +20,9 @@ router.post("/api/burger", (req, res) => {
 
 router.put("/api/burger/:id/devour", (req, res) => {
   const condition = { id: req.params.id };
-  const update = { sleepy: req.body.value };
+  const update = { devoured: true };
 
-  cat.update(update, condition, (result) => {
+  burger.update(update, condition, (result) => {
     if (result.affectedRows === 0) {
       return res.status(404).end();
     }

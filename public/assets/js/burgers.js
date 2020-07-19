@@ -3,7 +3,7 @@ $(() => {
   $(".devour-button").on("click", function () {
     const id = $(this).data("id");
 
-    $.ajax(`/api/burgers/${id}/devour`, {
+    $.ajax(`/api/burger/${id}/devour`, {
       type: "PUT",
       contentType: "application/json; charset=UTF-8",
     }).then(() => {
